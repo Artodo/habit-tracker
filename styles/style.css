@@ -1,0 +1,296 @@
+ul {
+  padding: 0;
+}
+
+body {
+  background: #F3F6FD;
+}
+
+main {
+  font-family: "Comfortaa";
+  margin: 0 auto;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+.panel {
+  background-color: #edecf2;
+  width: 13%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  justify-content: start;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  margin: 20px 0;
+  box-shadow: 0px 8px 14px 0px #3E6BE01F;
+  border-radius: 30%;
+}
+
+
+.nav-item:hover {
+  box-shadow: 0px 8px 14px 0px #627ec5;
+  cursor: pointer;
+  /* filter:  brightness(0) invert(1); */
+}
+
+.nav-img {
+  width: 25px;
+  height: 25px;
+}
+
+/* ///////////////////////////////////////////////// */
+.content {
+  padding: 40px;
+  width: 87%;
+}
+
+.content__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.progress {
+  position: relative;
+  width: 21%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.execution-status {
+  width: 100%;
+  height: 5px;
+  background-color: #E6E9ED;
+  margin-top: 15px;
+}
+
+.progress-status {
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  background-color: blue;
+
+}
+
+.task {
+  display: flex;
+  flex-wrap: wrap;
+  height: 54px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.day-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16%;
+  background-color: #edecf2;
+  text-align: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.task__text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  font-size: 16px;
+  width: 80%;
+  padding-left: 25px;
+  border-radius: 0 10px 10px 0;
+  padding: 0 5px 0 25px;
+}
+
+.delete {
+  position: absolute;
+  right: 25px;
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+.done {
+  border: none;
+  background-color: #EDECFE;
+  width: 120px;
+  height: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.done:hover {
+  background: rgba(97, 97, 206, 0.467);
+}
+
+
+.task__input {
+  box-sizing: border-box;
+  padding-left: 50px;
+  width: 79%;
+  height: 37px;
+  border: 1px solid #E7EBFB;
+  border-radius: 10px;
+}
+
+.add-coment {
+  position: absolute;
+  left: 45px;
+}
+
+.images-active {
+  background-color: rgba(0, 0, 255, 0.273);
+}
+
+.modal {
+  display: none;
+  width: 424px;
+  height: 338px;
+  position: absolute;
+  top: 15%;
+  left: 33%;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 3%;
+  padding: 25px;
+  align-items: center;
+  z-index: 10;
+}
+
+.show-modal {
+  display: flex;
+}
+
+.modal__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+}
+
+.subtitl {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.listImagesModal {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px 0 0;
+}
+
+.img-item {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #5051F9;
+  border-radius: 17px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 20px;
+}
+
+.book-img{
+  width: 70%;
+}
+
+.name-new-task,
+.purpose-new-task {
+  width: 90%;
+  height: 39px;
+  border-radius: 10px;
+  border: 1px solid #E7EBFB;
+  padding-left: 15px;
+}
+
+
+.add-new-taskBtn {
+  width: 120px;
+  height: 39px;
+  background-color: #EDECFE;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cross {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.cross1 {
+  width: 24px;
+  height: 3px;
+  background-color: #5051F9;
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+.cross2 {
+  width: 24px;
+  height: 3px;
+  background-color: #5051F9;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.task__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 10px 0;
+  height: 54px;
+}
+
+.habbit--active {
+  display: flex;
+}
+
+.welcome {
+  font-size: 30px;
+  font-family: "Comfortaa";
+  position: absolute;
+  top: 10%;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+
+/* .habbit__wrapper{
+    display: none;
+  }  */
